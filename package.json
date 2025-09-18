@@ -1,0 +1,30 @@
+{
+  "name": "proyecto-node-jwt-ts",
+  "version": "0.0.1",
+  "description": "Proyecto de Node con Typescript donde usaremos como BD PostgreSQL y para autenticar JWT",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/server.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "node dist/server.js"
+  },
+  "author": "Gerardo Chevarria",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.5.0",
+    "prisma": "^6.16.1",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.16.1",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "typescript": "^5.9.2"
+  }
+}
